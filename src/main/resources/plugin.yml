@@ -6,3 +6,7 @@ depend: [ meins_core ]
 authors: [ dotEXE ]
 description: .
 website: https://github.com/github-dotEXE
+
+commands:
+  image:
+    description: /image -|[url]
