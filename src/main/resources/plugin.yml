@@ -1,8 +1,0 @@
-name: meins_image
-version: '${project.version}'
-main: de.dotEXE.image.Main
-api-version: 1.19
-depend: [ meins_core ]
-authors: [ dotEXE ]
-description: .
-website: https://github.com/github-dotEXE
