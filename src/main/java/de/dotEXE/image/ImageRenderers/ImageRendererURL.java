@@ -1,4 +1,4 @@
-package de.dotEXE.image;
+package de.dotEXE.image.ImageRenderers;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
