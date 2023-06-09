@@ -1,13 +1,7 @@
 package de.dotEXE.image;
 
-import de.dotEXE.image.ImageManagers.ImageManagerColor;
-import de.dotEXE.image.ImageManagers.ImageManagerRR;
-import de.dotEXE.image.ImageManagers.ImageManagerScreen;
-import de.dotEXE.image.ImageManagers.ImageManagerURL;
-import de.dotEXE.image.ImageRenderers.ImageRendererColor;
-import de.dotEXE.image.ImageRenderers.ImageRendererRR;
-import de.dotEXE.image.ImageRenderers.ImageRendererScreen;
-import de.dotEXE.image.ImageRenderers.ImageRendererURL;
+import de.dotEXE.image.ImageManagers.*;
+import de.dotEXE.image.ImageRenderers.*;
 import de.ender.core.ItemBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -60,7 +54,11 @@ public class Image implements CommandExecutor{
                 renderer = new ImageRendererColor(args[1]);
                 success = true;
                 break;
-
+            case "shader":
+                ImageManagerShader.getInstance().saveImage(id);
+                renderer = new ImageRendererShader();
+                success = true;
+                break;
             case "url":
             default:
                 String imageURL = "https://avatars.githubusercontent.com/u/107443157?s=128&v=4";
